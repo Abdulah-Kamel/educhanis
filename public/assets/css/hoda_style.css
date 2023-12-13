@@ -1,0 +1,136 @@
+
+/* start login page */
+
+:root {
+    --dark-mode-bg: #3C3C3C;
+    --dark-text-color: #C3C3C3;
+}
+
+.login-sec {
+    background-color: #313131b5;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+}
+
+.login-sec h3 {
+    color: #D79330;
+}
+
+.login-sec .box {
+    gap: 2rem;
+}
+
+.login-sec .box .social-buttons {
+    padding: .80rem 0;
+    background-color: #fff;
+    color: #4F4E4E;
+    border: none;
+    padding-left: calc(100% - 350px);
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+    .login-sec .box .social-buttons {
+        padding: .80rem 0;
+        background-color: #fff;
+        color: #4F4E4E;
+        border: none;
+        padding-left: calc(100% - 350px);
+        text-align: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .login-sec .box .social-buttons {
+        padding-left: calc(100% - 415px);
+        text-align: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .login-sec .box .social-buttons {
+        padding-left: calc(100% - 350px);
+        text-align: left;
+    }
+}
+
+.login-sec input[type="text"],
+.login-sec input[type="password"] {
+    padding: 0.8rem 0.5rem;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.login-sec input[type="text"]:focus,
+.login-sec input[type="password"]:focus {
+    outline: none;
+}
+
+.login-sec .btn-yellow {
+    background-color: #D79330;
+    color: white;
+    padding: 0.8rem 2.5rem;
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.send-info {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.send-info input[type="checkbox"] {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.color-yellow {
+    color: #D79330;
+}
+
+.white-link {
+    text-transform: capitalize;
+    color: white;
+    text-decoration: underline;
+}
+
+.white-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* end login page */
+
+
+/* start dark mode on login page */
+
+.login-sec .box .social-buttons.dark-mode-on {
+    background-color: var(--dark-mode-bg);
+    color: var(--dark-text-color);
+}
+
+.login-sec .dark-mode-on,
+.login-sec .dark-mode-on{
+    background-color: var(--dark-mode-bg);
+    color: var(--dark-text-color);
+}
+
+.DarkBtn {
+    background-color: var(--dark-mode-bg);
+    color: var(--dark-text-color);
+}
+
+.darkMode:active,
+.darkMode:focus {
+    background-color: var(--dark-mode-bg);
+    color: var(--dark-text-color);
+    border: 1px solid var(--dark-mode-bg);
+}
+
+/* end dark mode on login page */
